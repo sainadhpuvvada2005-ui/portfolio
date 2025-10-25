@@ -40,6 +40,10 @@ def contact():
     # Optional: send an email (not enabled by default)
     # You can implement SMTP here if you want (see instructions).
     return jsonify({'success': True})
+    if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 5000))  # Render provides PORT
+    app.run(host="0.0.0.0", port=port)
 
 if __name__ == '__main__':
     app.run(debug=True)
+
