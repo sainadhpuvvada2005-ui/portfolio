@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Puvvada Venkata Sainadh — Portfolio</title>
+  <meta name="description" content="Portfolio of Puvvada Venkata Sainadh — Web & Python developer." />
+  <link rel="stylesheet" href="static/style.css"/>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Sainadh</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1>Puvvada Venkata Sainadh</h1>
+        <p class="subtitle">Computer Science Student • Web & Python Developer</p>
+        <p class="lead">I build web apps using HTML/CSS/JS and Python (Flask). I enjoy full-stack projects, automation, and small tools that solve real problems.</p>
+        <div class="cta">
+          <a href="#projects" class="btn">See Projects</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="photo-wrap">
+          <img src="static/sainadh.jpg" alt="Puvvada Venkata Sainadh">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>Hi — I'm Sainadh, a Computer Science student passionate about building web applications and automation tools. I've worked on QR code based attendance systems, e-commerce web apps, and IoT projects for plant care. I enjoy learning new libraries and improving user experience through clean, responsive UI.</p>
+    </section>
+
+     <section id="skills" class="container skills">
+      <h2>Skills</h2>
+     <div class="skill-grid">
+     <div class="skill-card"> Python</span></div>
+     <div class="skill-card"> Flask</span></div>
+     <div class="skill-card"> Supabase</span></div>
+     <div class="skill-card">HTML</span></div>
+     <div class="skill-card"> CSS</span></div>
+     <div class="skill-card"> JavaScript</span></div>
+     <div class="skill-card"> Git & GitHub</span></div>
+     </div>
+     </section>
+
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>QR Code Attendance System</h3>
+          <p>Developed with the help of Lovable AI ❤️ a modern classroom attendance system where each session generates a unique QR code. Students scan the QR, verify their details, and mark attendance. Built using React for the frontend and Supabase as the database, with Flask logic for backend automation and verification.</p>
+          <div class="proj-links">
+            <a href="#" class="small-btn">Source</a>
+            <a href="https://quick-class-checkin-beacon.lovable.app/" class="small-btn ghost">Demo</a>
+            
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>E-commerce for Cleaning Products</h3>
+          <p>Full shopping flow with admin panel to update products and images. Uses Flask backend and a persistent DB.</p>
+          <div class="proj-links">
+            <a href="#" class="small-btn">Source</a>
+            <a href="#" class="small-btn ghost">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Smart Plant Care System</h3>
+          <p>Soil moisture + temperature logic with automatic watering and alerting; includes circuit diagram and testing reports.</p>
+          <div class="proj-links">
+            <a href="#" class="small-btn">Report</a>
+            <a href="#" class="small-btn ghost">Docs</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate or have questions, send a message below.</p>
+
+      <form id="contactForm" method="post" action="/contact">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-row actions">
+          <button type="submit" class="btn">Send</button>
+          <div id="formStatus" class="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; {{ year }} Puvvada Venkata Sainadh • <a href="mailto:your-email@example.com">sainadhpuvvada2005@gmail.com</a></p>
+  </footer>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
